@@ -1,0 +1,162 @@
+body{
+  margin: 0;
+}
+.first{
+ display: flex;
+  div{
+    height: 100px;
+  }
+  .left{
+    width: 100px;
+    background: red;
+  }
+  .center{
+    flex: 1;
+    background: black;
+  }
+  .right{
+    width: 100px;
+    background: green;
+  }
+}
+
+.second{
+  div{
+    height: 100px;
+    float: left;
+  }
+  .left-parents{
+    width: 100%;
+    background: red;
+    .left{
+      height: 100px;
+      margin: 0 100px;
+    }
+  }
+  .center{
+    width: 100px;
+    background: green;
+    margin-left: -100%;
+  }
+  .right{
+    width: 100px;
+    background: yellow;
+    margin-left: -100px;
+  }
+}
+
+.third{
+  div{
+    height: 100px;
+  }
+  .left{
+    width: 100px;
+    float: left;
+    background: indigo;
+  }
+  .center{
+    float: right;
+    width: 100px;
+    background: green;
+  }
+  .right{
+    width: auto;
+    background: yellow;
+    margin: 0 100px;
+  }
+
+
+}
+
+.four{
+  width: 100%;
+  height: 100px;
+  position: relative;
+  .left{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: indigo;
+    left: 0;
+    top: 0;
+  }
+  .center{
+    position: absolute;
+    height: 100px;
+    background: yellow;
+    left: 100px;
+    right: 100px;
+    top: 0;
+  }
+  .right{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: antiquewhite;
+    right: 0;
+    top: 0;
+  }
+
+
+
+}
+
+.five{
+  display:grid;
+  grid-template-columns: 100px auto 100px;
+  .left{
+    background: red;
+  }
+  .center{
+    background: yellow;
+  }
+  .right{
+    background: indigo;
+  }
+}
+
+.six{
+  display: table;
+  div{
+    //相当于td
+    display: table-cell;
+    height: 100px;
+  }
+  .left{
+    min-width: 100px;
+    width: 100px;
+    background: #99bafd;
+  }
+  .center{
+    background: indigo;
+    width: 100%;
+    margin: 0 100px;
+  }
+  .right{
+    min-width: 100px;
+    width: 100px;
+    background: green;
+  }
+}
+
+.seven{
+  div{
+    height: 100px;
+    float: left;
+  }
+  .left{
+    width: 100%;
+    background: green;
+  }
+  .right{
+
+    background: yellow;
+    width: 100px;
+    margin-left: -100px;
+  }
+  .center{
+    width: 100px;
+    background: azure;
+    margin-left: -100%;
+  }
+}
